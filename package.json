@@ -1,9 +1,10 @@
 {
   "name": "shot-me-down-tracker",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,15 @@
     "url": "https://github.com/AriHoresh/shot-me-down-tracker/issues"
   },
   "homepage": "https://github.com/AriHoresh/shot-me-down-tracker#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "lowdb": "^5.0.4"
+  },
+  "engines": {
+    "node": ">=16"
+  }
 }
