@@ -1,20 +1,20 @@
 {
   "name": "shot-me-down-tracker",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Shot tracking web app for the 'Shot Me Down' bar",
+  "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AriHoresh/shot-me-down-tracker.git"
+  "engines": {
+    "node": ">=18"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AriHoresh/shot-me-down-tracker/issues"
-  },
-  "homepage": "https://github.com/AriHoresh/shot-me-down-tracker#readme",
-  "description": ""
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "lowdb": "^5.0.4"
+  }
 }
