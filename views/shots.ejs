@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Shots</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Welcome <%= user.name %></h1>
+  <h2>Log a Shot</h2>
+  <form action="/shots" method="post">
+    <label>Shot name: <input type="text" name="shotName"></label><br>
+    <label>Location: <input type="text" name="location"></label><br>
+    <button type="submit">Add</button>
+  </form>
+
+  <h2>Your Shots</h2>
+  <ul>
+  <% user.shots.forEach(function(s) { %>
+    <li><%= s.name %> - <%= s.location %> - <%= s.date %></li>
+  <% }) %>
+  </ul>
+  <a href="/stats">View Stats</a>
+</body>
+</html>
