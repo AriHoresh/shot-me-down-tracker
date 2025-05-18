@@ -1,0 +1,5 @@
+<%- include('partials/header', { user: true }) %>
+<h1>Your Stats</h1>
+<p><%= done %> / <%= totalShots %> shots completed</p>
+<progress value="<%= done %>" max="<%= totalShots %>"></progress>
+<%- include('partials/footer') %>
