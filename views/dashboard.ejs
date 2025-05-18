@@ -1,0 +1,14 @@
+<%- include('partials/header', { user: true }) %>
+<h1>Shot Tracker</h1>
+<div>
+  <% shots.forEach(shot => { %>
+    <form method="POST" action="/toggle-shot/<%= shot.id %>" style="display:inline">
+      <div class="shot <%= completed.has(shot.id) ? 'complete' : '' %>">
+        <button type="submit" style="background:none;border:none;color:inherit">
+          <%= shot.name %>
+        </button>
+      </div>
+    </form>
+  <% }) %>
+</div>
+<%- include('partials/footer') %>
