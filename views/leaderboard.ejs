@@ -1,0 +1,9 @@
+<%- include('partials/header', { user: true }) %>
+<h1>Leaderboard</h1>
+<table>
+  <tr><th>User</th><th>Shots Done</th></tr>
+  <% rows.forEach(r => { %>
+    <tr><td><%= r.username %></td><td><%= r.done %></td></tr>
+  <% }) %>
+</table>
+<%- include('partials/footer') %>
